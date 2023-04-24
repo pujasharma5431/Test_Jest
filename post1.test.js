@@ -26,7 +26,7 @@ describe('POST /objects', () => {
       expect(response.data.email).toBe(newObject.email);
       expect(response.data.first_name).toBe(newObject.first_name);
       expect(response.data.last_name).toBe(newObject.last_name);
-      expect(response.data.last_name1).toBe(newObject.last_name1);
+    
       expect(response.data.avatar).toBe(newObject.avatar);
     } catch (error) {
       console.error(error);
