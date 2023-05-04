@@ -1,17 +1,16 @@
 const axios = require('axios');
 
-describe('PUT /objects', () => {
+describe('DELETE /objects', () => {
   it('should create a new user', async () => {
     const userData = {
       id: '7',
       name: 'ASUS',
       data: {
-       year: 2019,
-       price:123434
+       year: 2023,
       
       }
     };
-    const response = await axios.post('https://api.restful-api.dev/objects', userData);
+    const response = await axios.delete('https://api.restful-api.dev/objects', userData);
     expect(response.status).toBe(200);
     expect(response.data).toMatchObject({
       name: userData.name,
